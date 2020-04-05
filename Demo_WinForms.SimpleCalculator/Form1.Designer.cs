@@ -78,7 +78,7 @@
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Exit.Location = new System.Drawing.Point(925, 439);
+            this.btn_Exit.Location = new System.Drawing.Point(122, 317);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(100, 42);
@@ -160,7 +160,7 @@
             this.grpBox_Inputs.Controls.Add(this.lbl_Length);
             this.grpBox_Inputs.Controls.Add(this.txtBox_Length);
             this.grpBox_Inputs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grpBox_Inputs.Location = new System.Drawing.Point(252, 133);
+            this.grpBox_Inputs.Location = new System.Drawing.Point(252, 132);
             this.grpBox_Inputs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpBox_Inputs.Name = "grpBox_Inputs";
             this.grpBox_Inputs.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -212,7 +212,7 @@
             this.groupBox1.Controls.Add(this.txtBox_EmptyWeight);
             this.groupBox1.Controls.Add(this.txtBox_PayloadWeight);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(529, 121);
+            this.groupBox1.Location = new System.Drawing.Point(529, 132);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -304,7 +304,7 @@
             this.btn_Help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Help.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Help.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Help.Location = new System.Drawing.Point(786, 440);
+            this.btn_Help.Location = new System.Drawing.Point(13, 317);
             this.btn_Help.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Help.Name = "btn_Help";
             this.btn_Help.Size = new System.Drawing.Size(100, 42);
@@ -368,7 +368,7 @@
             this.lbl_WeightUnits.AutoSize = true;
             this.lbl_WeightUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_WeightUnits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_WeightUnits.Location = new System.Drawing.Point(237, 31);
+            this.lbl_WeightUnits.Location = new System.Drawing.Point(209, 28);
             this.lbl_WeightUnits.Name = "lbl_WeightUnits";
             this.lbl_WeightUnits.Size = new System.Drawing.Size(93, 25);
             this.lbl_WeightUnits.TabIndex = 9;
@@ -380,7 +380,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1100, 507);
+            this.ClientSize = new System.Drawing.Size(885, 403);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_Help);
             this.Controls.Add(this.groupBox1);
