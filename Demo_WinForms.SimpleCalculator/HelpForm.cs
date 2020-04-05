@@ -21,7 +21,7 @@ namespace Demo_WinForms.SimpleCalculator
 
         private void Btn_Exit_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
         }
     }
 }

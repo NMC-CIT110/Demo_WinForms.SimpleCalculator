@@ -49,8 +49,8 @@
             this.lbl_Empty = new System.Windows.Forms.Label();
             this.txtBox_EmptyWeight = new System.Windows.Forms.TextBox();
             this.btn_Help = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radBtn_Imperial = new System.Windows.Forms.RadioButton();
+            this.radBtn_Metric = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbl_LengthUnits = new System.Windows.Forms.Label();
             this.lbl_WeightUnits = new System.Windows.Forms.Label();
@@ -63,12 +63,12 @@
             // lbl_Title
             // 
             this.lbl_Title.AutoSize = true;
-            this.lbl_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_Title.Location = new System.Drawing.Point(329, 44);
+            this.lbl_Title.Location = new System.Drawing.Point(331, 20);
             this.lbl_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(367, 31);
+            this.lbl_Title.Size = new System.Drawing.Size(462, 39);
             this.lbl_Title.TabIndex = 0;
             this.lbl_Title.Text = "Dump Trailer Load Calculator";
             // 
@@ -78,7 +78,7 @@
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Exit.Location = new System.Drawing.Point(122, 317);
+            this.btn_Exit.Location = new System.Drawing.Point(140, 349);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(100, 42);
@@ -216,7 +216,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(316, 259);
+            this.groupBox1.Size = new System.Drawing.Size(325, 259);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
@@ -226,7 +226,7 @@
             this.btn_Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Calculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Calculate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_Calculate.Location = new System.Drawing.Point(93, 115);
+            this.btn_Calculate.Location = new System.Drawing.Point(87, 103);
             this.btn_Calculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Calculate.Name = "btn_Calculate";
             this.btn_Calculate.Size = new System.Drawing.Size(215, 38);
@@ -240,7 +240,7 @@
             this.lbl_GrossWeight.AutoSize = true;
             this.lbl_GrossWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_GrossWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_GrossWeight.Location = new System.Drawing.Point(88, 217);
+            this.lbl_GrossWeight.Location = new System.Drawing.Point(72, 205);
             this.lbl_GrossWeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_GrossWeight.Name = "lbl_GrossWeight";
             this.lbl_GrossWeight.Size = new System.Drawing.Size(64, 25);
@@ -250,18 +250,19 @@
             // txtBox_GrossWeight
             // 
             this.txtBox_GrossWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_GrossWeight.Location = new System.Drawing.Point(174, 214);
+            this.txtBox_GrossWeight.Location = new System.Drawing.Point(168, 202);
             this.txtBox_GrossWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBox_GrossWeight.Name = "txtBox_GrossWeight";
             this.txtBox_GrossWeight.Size = new System.Drawing.Size(132, 30);
             this.txtBox_GrossWeight.TabIndex = 6;
+            this.txtBox_GrossWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbl_PayloadWeight
             // 
             this.lbl_PayloadWeight.AutoSize = true;
             this.lbl_PayloadWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_PayloadWeight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_PayloadWeight.Location = new System.Drawing.Point(88, 166);
+            this.lbl_PayloadWeight.Location = new System.Drawing.Point(72, 154);
             this.lbl_PayloadWeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_PayloadWeight.Name = "lbl_PayloadWeight";
             this.lbl_PayloadWeight.Size = new System.Drawing.Size(83, 25);
@@ -271,18 +272,19 @@
             // txtBox_PayloadWeight
             // 
             this.txtBox_PayloadWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_PayloadWeight.Location = new System.Drawing.Point(174, 162);
+            this.txtBox_PayloadWeight.Location = new System.Drawing.Point(168, 150);
             this.txtBox_PayloadWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBox_PayloadWeight.Name = "txtBox_PayloadWeight";
             this.txtBox_PayloadWeight.Size = new System.Drawing.Size(132, 30);
             this.txtBox_PayloadWeight.TabIndex = 4;
+            this.txtBox_PayloadWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbl_Empty
             // 
             this.lbl_Empty.AutoSize = true;
             this.lbl_Empty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Empty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_Empty.Location = new System.Drawing.Point(8, 64);
+            this.lbl_Empty.Location = new System.Drawing.Point(8, 54);
             this.lbl_Empty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Empty.Name = "lbl_Empty";
             this.lbl_Empty.Size = new System.Drawing.Size(129, 25);
@@ -292,11 +294,12 @@
             // txtBox_EmptyWeight
             // 
             this.txtBox_EmptyWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_EmptyWeight.Location = new System.Drawing.Point(170, 60);
+            this.txtBox_EmptyWeight.Location = new System.Drawing.Point(170, 50);
             this.txtBox_EmptyWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBox_EmptyWeight.Name = "txtBox_EmptyWeight";
             this.txtBox_EmptyWeight.Size = new System.Drawing.Size(132, 30);
             this.txtBox_EmptyWeight.TabIndex = 2;
+            this.txtBox_EmptyWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btn_Help
             // 
@@ -304,7 +307,7 @@
             this.btn_Help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Help.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Help.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Help.Location = new System.Drawing.Point(13, 317);
+            this.btn_Help.Location = new System.Drawing.Point(32, 349);
             this.btn_Help.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Help.Name = "btn_Help";
             this.btn_Help.Size = new System.Drawing.Size(100, 42);
@@ -313,36 +316,36 @@
             this.btn_Help.UseVisualStyleBackColor = false;
             this.btn_Help.Click += new System.EventHandler(this.Btn_Help_Click);
             // 
-            // radioButton1
+            // radBtn_Imperial
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.radioButton1.Location = new System.Drawing.Point(33, 20);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(101, 29);
-            this.radioButton1.TabIndex = 15;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Imperial";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radBtn_Imperial.AutoSize = true;
+            this.radBtn_Imperial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radBtn_Imperial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.radBtn_Imperial.Location = new System.Drawing.Point(33, 20);
+            this.radBtn_Imperial.Name = "radBtn_Imperial";
+            this.radBtn_Imperial.Size = new System.Drawing.Size(101, 29);
+            this.radBtn_Imperial.TabIndex = 15;
+            this.radBtn_Imperial.TabStop = true;
+            this.radBtn_Imperial.Text = "Imperial";
+            this.radBtn_Imperial.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radBtn_Metric
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.radioButton2.Location = new System.Drawing.Point(33, 51);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(86, 29);
-            this.radioButton2.TabIndex = 16;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Metric";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radBtn_Metric.AutoSize = true;
+            this.radBtn_Metric.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radBtn_Metric.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.radBtn_Metric.Location = new System.Drawing.Point(33, 51);
+            this.radBtn_Metric.Name = "radBtn_Metric";
+            this.radBtn_Metric.Size = new System.Drawing.Size(86, 29);
+            this.radBtn_Metric.TabIndex = 16;
+            this.radBtn_Metric.TabStop = true;
+            this.radBtn_Metric.Text = "Metric";
+            this.radBtn_Metric.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.radBtn_Metric);
+            this.groupBox2.Controls.Add(this.radBtn_Imperial);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.cmbBox_Material);
             this.groupBox2.Location = new System.Drawing.Point(32, 132);
@@ -368,7 +371,7 @@
             this.lbl_WeightUnits.AutoSize = true;
             this.lbl_WeightUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_WeightUnits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_WeightUnits.Location = new System.Drawing.Point(209, 28);
+            this.lbl_WeightUnits.Location = new System.Drawing.Point(209, 18);
             this.lbl_WeightUnits.Name = "lbl_WeightUnits";
             this.lbl_WeightUnits.Size = new System.Drawing.Size(93, 25);
             this.lbl_WeightUnits.TabIndex = 9;
@@ -380,7 +383,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(885, 403);
+            this.ClientSize = new System.Drawing.Size(885, 406);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_Help);
             this.Controls.Add(this.groupBox1);
@@ -426,8 +429,8 @@
         private System.Windows.Forms.Label lbl_Empty;
         private System.Windows.Forms.TextBox txtBox_EmptyWeight;
         private System.Windows.Forms.Button btn_Help;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radBtn_Imperial;
+        private System.Windows.Forms.RadioButton radBtn_Metric;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lbl_LengthUnits;
         private System.Windows.Forms.Label lbl_WeightUnits;
