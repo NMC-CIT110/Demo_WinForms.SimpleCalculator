@@ -328,6 +328,7 @@
             this.radBtn_Imperial.TabStop = true;
             this.radBtn_Imperial.Text = "Imperial";
             this.radBtn_Imperial.UseVisualStyleBackColor = true;
+            this.radBtn_Imperial.CheckedChanged += new System.EventHandler(this.RadBtn_Imperial_CheckedChanged);
             // 
             // radBtn_Metric
             // 
@@ -341,6 +342,7 @@
             this.radBtn_Metric.TabStop = true;
             this.radBtn_Metric.Text = "Metric";
             this.radBtn_Metric.UseVisualStyleBackColor = true;
+            this.radBtn_Metric.CheckedChanged += new System.EventHandler(this.RadBtn_Metric_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -359,7 +361,7 @@
             this.lbl_LengthUnits.AutoSize = true;
             this.lbl_LengthUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_LengthUnits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_LengthUnits.Location = new System.Drawing.Point(164, 19);
+            this.lbl_LengthUnits.Location = new System.Drawing.Point(92, 20);
             this.lbl_LengthUnits.Name = "lbl_LengthUnits";
             this.lbl_LengthUnits.Size = new System.Drawing.Size(65, 25);
             this.lbl_LengthUnits.TabIndex = 8;
@@ -371,7 +373,7 @@
             this.lbl_WeightUnits.AutoSize = true;
             this.lbl_WeightUnits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_WeightUnits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lbl_WeightUnits.Location = new System.Drawing.Point(209, 18);
+            this.lbl_WeightUnits.Location = new System.Drawing.Point(163, 19);
             this.lbl_WeightUnits.Name = "lbl_WeightUnits";
             this.lbl_WeightUnits.Size = new System.Drawing.Size(93, 25);
             this.lbl_WeightUnits.TabIndex = 9;
