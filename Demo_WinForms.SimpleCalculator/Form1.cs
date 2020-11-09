@@ -61,7 +61,7 @@ namespace Demo_WinForms.SimpleCalculator
             _materialDensities.Add(MaterialName.Sand, 101.8);
             _materialDensities.Add(MaterialName.Limestone, 150);
             _materialDensities.Add(MaterialName.Concrete, 145);
-            _materialDensities.Add(MaterialName.Clowns, 145);
+            _materialDensities.Add(MaterialName.Clowns, 63);
         }
 
         private void Btn_Exit_Click(object sender, EventArgs e)
@@ -88,15 +88,15 @@ namespace Demo_WinForms.SimpleCalculator
             if (errorMessage == "")
             {
                 Enum.TryParse(cmbBox_Material.Text, out MaterialName materialName);
-                double payloadWeight = _materialDensities[materialName];
+                double payloadDensity = _materialDensities[materialName];
 
                 switch (_systemOfUnits)
                 {
                     case UnitSystem.Imperial:
-                        payloadWeight *= 1;
+                        payloadDensity *= 1;
                         break;
                     case UnitSystem.Metric:
-                        payloadWeight /= CUBIC_METERS_PER_CUBIC_FOOT;
+                        payloadDensity /= CUBIC_METERS_PER_CUBIC_FOOT;
                         break;
                     default:
                         throw new Exception("Unknown system of units.");
@@ -107,8 +107,8 @@ namespace Demo_WinForms.SimpleCalculator
                 // update form text boxes
                 //
                 txtBox_EmptyWeight.Text = emptyWeight.ToString("n0");
-                txtBox_PayloadWeight.Text = (Volume(length, width, height) * payloadWeight).ToString("n0");
-                txtBox_GrossWeight.Text = (emptyWeight + payloadWeight).ToString("n0");
+                txtBox_PayloadWeight.Text = (Volume(length, width, height) * payloadDensity).ToString("n0");
+                txtBox_GrossWeight.Text = (emptyWeight + payloadDensity).ToString("n0");
             }
 
             //
